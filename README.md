@@ -40,9 +40,9 @@ Prerequisites:
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/authentication-system.git
+git clone https://github.com/Kaustuv-b/Advanced-CyberSecurity-Assingment.git
 
-cd authentication-system
+cd Advanced-CyberSecurity-Assingment
 ```
 
 Install Required packages 
