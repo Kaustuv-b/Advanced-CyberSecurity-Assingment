@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+{% load static %}
+
+
+<div class="center">
+    <h1>Welcome to the Home Page</h1>
+    <a href="{% url 'logout' %}"><input type="submit" value="Logout"></a>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,38 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+<div class="center">
+    <h1>Enter the OTP</h1>
+
+    <center>
+        <div class="signup_link">An OTP has been sent to your email. Please note that it <b>expires in 5 minutes</b>!</div>
+    </center>
+
+    {% if messages %}
+        {% for message in messages %}
+            {% if message.tags == 'error' %}
+                <center><h4 style="color: firebrick;">{{message}}</h4></center>
+            {% else %}
+                <center><h4 style="color: dodgerblue;">{{message}}</h4></center>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+      
+    <form method="POST">
+
+      {% csrf_token %}
+
+      <div class="txt_field">
+        <input type="text" required name="otp">
+        <span></span>
+        <label>OTP</label>
+      </div>    
+
+      <input type="submit" value="Verify OTP">
+
+    </form>
+  </div>
+
+
+{% endblock content %}
