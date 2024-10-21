@@ -50,6 +50,7 @@ Install Required packages
 ```bash
     pip install django 
     pip install django-reCAPTCHA
+    pip install requests 
 ```
 
 Set up environment variables for:
